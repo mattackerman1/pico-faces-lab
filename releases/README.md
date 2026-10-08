@@ -2,8 +2,9 @@
 
 ## pico-faces-attn45-v1
 
-Board-tested custom firmware with improved Block 4 and Block 5
-attention-input quantization scales.
+An independent, board-tested extension of Tim B.'s `cpldcpu/pico-faces`
+firmware. It keeps Tim's model and inference engine while improving the Block
+4 and Block 5 attention-input quantization scales.
 
 - [Release notes](pico-faces-attn45-v1/README.md)
 - [Custom UF2](pico-faces-attn45-v1/pico_faces_m3_long_cfg_attn45.uf2)
@@ -12,5 +13,5 @@ attention-input quantization scales.
 ZIP SHA-256:
 
 ```text
-E8B769F585D66BCC29AAF408E0132895B27A7B64034A13749BAC0C1143C6FDAC
+A92FCC08312FE38A5B5D02628964755429E0162D6E575FC593F3CBB260076CE2
 ```

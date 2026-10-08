@@ -1,9 +1,18 @@
-# Extended capstone — Improve the deployed model
+# Extending Tim's Pico Faces model
 
-The GUI capstone is working. The extended capstone investigates architectural
-and training changes that could make the model smaller or more accurate on the
-Pico 2. Each part begins with a low-cost feasibility audit before committing to
-training or firmware changes.
+This is an experimental extension of Tim B.'s
+[Pico Faces project](https://github.com/cpldcpu/pico-faces), introduced in
+[AI Image Generation on an RP2350 Microcontroller](https://cpldcpu.github.io/2026/08/28/ai-image-generation-on-a-rp-pico-2-microcontroller/).
+Tim designed and trained the latent flow diffusion transformer, VAE decoder,
+quantization pipeline, C inference engine, and RP2350 firmware. This work does
+not replace or claim those contributions.
+
+The extension follows two improvement opportunities identified in Tim's post:
+AdaLN-single as a possible way to compress conditioning data, and better
+control of activation quantization to reduce int8 damage. Each part starts
+with a low-cost feasibility audit before attempting training or firmware
+changes. Part 1 remains a research result; Part 2 produced the custom,
+board-verified firmware distributed here.
 
 ## Part 1 — AdaLN-single conditioning compression
 
