@@ -1,7 +1,7 @@
 # Pico Faces: an RP2350 quantization extension
 
-This repository is an experimental extension of Tim B.'s **Pico Faces**
-project—not a separate implementation of the generator.
+This repository is an experimental extension of the **Pico Faces** project
+described on Tim's Blog—not a separate implementation of the generator.
 
 Start with Tim's original work:
 
@@ -170,10 +170,10 @@ No VGA hardware is required.
 ## Attribution and license
 
 Pico Faces, its models, training and quantization code, inference engine, and
-firmware are by Tim B. (`cpldcpu`) and distributed under the upstream MIT
-license. The upstream repository is pinned here as a Git submodule. The
-release package includes Tim's license and an untouched upstream UF2 for
-rollback.
+firmware come from Tim's Blog and the `cpldcpu/pico-faces` repository and are
+distributed under the upstream MIT license. The upstream repository is pinned
+here as a Git submodule. The release package includes the upstream license and
+an untouched upstream UF2 for rollback.
 
 The step-by-step lessons, analysis tools, reports, GUI, and calibration
 experiment in this repository document our extension of that work.

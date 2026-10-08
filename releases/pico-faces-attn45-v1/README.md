@@ -1,11 +1,12 @@
 # Pico Faces attention-scale extension v1
 
-This firmware is an experimental extension of Tim B.'s **Pico Faces** project:
+This firmware is an experimental extension of the **Pico Faces** project
+described on Tim's Blog:
 
 - [Original article: AI Image Generation on an RP2350 Microcontroller](https://cpldcpu.github.io/2026/08/28/ai-image-generation-on-a-rp-pico-2-microcontroller/)
 - [Original repository: `cpldcpu/pico-faces`](https://github.com/cpldcpu/pico-faces)
 
-Tim designed and trained the model and created its quantization pipeline, C
+The original work includes the trained model, quantization pipeline, C
 inference engine, and RP2350 firmware. This build keeps those components and
 changes only two attention-input calibration scales in the released
 `m3_long_cfg` configuration:
@@ -32,9 +33,9 @@ Euler steps:
 | CFG 4 | PSNR | 28.89 dB | **29.65 dB** | +0.76 dB |
 
 The change preserves the same generated subjects and class behavior while
-reducing the integer model's deviation from Tim's floating-point generator.
-It is a subtle fidelity improvement, not a new model or a claim that every
-image is subjectively better.
+reducing the integer model's deviation from the original floating-point
+generator. It is a subtle fidelity improvement, not a new model or a claim
+that every image is subjectively better.
 
 ## Contents
 
@@ -43,7 +44,7 @@ image is subjectively better.
 - `firmware-report.json` — machine-readable build and verification record
 - `board.png` — image returned by the physical board in the CFG test
 - `SHA256SUMS.txt` — integrity hashes
-- `LICENSE` — Tim's upstream MIT license
+- `LICENSE` — the upstream MIT license
 
 ## Flash the custom firmware
 

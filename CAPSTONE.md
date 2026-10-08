@@ -1,11 +1,12 @@
 # Extending Tim's Pico Faces model
 
-This is an experimental extension of Tim B.'s
-[Pico Faces project](https://github.com/cpldcpu/pico-faces), introduced in
+This is an experimental extension of the
+[Pico Faces project](https://github.com/cpldcpu/pico-faces), introduced on
+[Tim's Blog](https://cpldcpu.github.io/) in
 [AI Image Generation on an RP2350 Microcontroller](https://cpldcpu.github.io/2026/08/28/ai-image-generation-on-a-rp-pico-2-microcontroller/).
-Tim designed and trained the latent flow diffusion transformer, VAE decoder,
-quantization pipeline, C inference engine, and RP2350 firmware. This work does
-not replace or claim those contributions.
+The original work includes the trained latent flow diffusion transformer, VAE
+decoder, quantization pipeline, C inference engine, and RP2350 firmware. This
+work does not replace or claim those contributions.
 
 The extension follows two improvement opportunities identified in Tim's post:
 AdaLN-single as a possible way to compress conditioning data, and better
