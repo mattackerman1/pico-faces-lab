@@ -1,0 +1,12 @@
+{
+  "engine": "upstream/pico-faces/build/m3_long_cfg-rebuilt/rf_golden.exe",
+  "blob": "device-output/capstone-02-exact-fold/tuned/model.bin",
+  "k_steps": 4,
+  "all_byte_exact": true,
+  "cases": [
+    {"seed": 1, "crc32": "785eaf0a", "byte_exact": true},
+    {"seed": 2, "crc32": "3d15e0bf", "byte_exact": true},
+    {"seed": 3, "crc32": "9532f998", "byte_exact": true},
+    {"seed": 4, "crc32": "d5c19408", "byte_exact": true}
+  ]
+}

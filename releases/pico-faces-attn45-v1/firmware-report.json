@@ -1,0 +1,48 @@
+{
+  "board": "Raspberry Pi Pico 2",
+  "platform": "rp2350-arm-s",
+  "sdk_version": "2.2.0",
+  "compiler": "arm-none-eabi-gcc 14.2.1",
+  "custom_uf2": {
+    "path": "device-output/capstone-02-exact-fold/pico_faces_m3_long_cfg_attn45.uf2",
+    "bytes": 5275648,
+    "sha256": "22716999BEA9771210007334C0501F8B8BD51F277F95ED4A0525022CD398084D"
+  },
+  "embedded_blob": {
+    "sha256": "9e99dc2d0f105d37c9b7426b24b30597a23a384cb32a41dc81526028422227b9",
+    "firmware_binary_offset": 51108,
+    "embedded_exactly_once": true
+  },
+  "flash": {
+    "tool": "picotool 2.2.0-a4",
+    "write_verified": true,
+    "application_rebooted": true,
+    "serial_port": "COM3"
+  },
+  "board_test": {
+    "seed": 42,
+    "steps": 4,
+    "condition": 1,
+    "cfg": 4,
+    "generation_ms": 5344,
+    "device_crc32": "94ee4f2c",
+    "host_crc32": "94ee4f2c",
+    "transport_crc_matches": true,
+    "integer_simulator_byte_exact": true
+  },
+  "plain_board_test": {
+    "seed": 42,
+    "steps": 4,
+    "condition": 1,
+    "cfg": 0,
+    "generation_ms": 3401,
+    "device_crc32": "b693c574",
+    "host_crc32": "b693c574",
+    "transport_crc_matches": true,
+    "integer_simulator_byte_exact": true
+  },
+  "release_rollback": {
+    "path": "upstream/pico-faces/uf2/pico_faces_m3_long_cfg.uf2",
+    "sha256": "0FEEF2156BFE15CBD21CC2E6A47888F91D60CAE3FE2F0449344FDEAAC5EA2267"
+  }
+}

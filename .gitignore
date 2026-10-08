@@ -1,0 +1,30 @@
+# Local Python environments and caches
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large, reproducible training and validation caches
+*.pt
+*.npy
+device-output/capstone-01-adaln-single/student-*/
+device-output/capstone-01-adaln-single/validation/
+
+# Large comparison grids; summary data remains tracked
+device-output/capstone-02-scale-refined/*.png
+device-output/capstone-02-scale-sweep/*.png
+
+# Generated compiler and exact-fold intermediates
+device-output/capstone-02-exact-fold/firmware-build/
+device-output/capstone-02-exact-fold/tuned/
+device-output/capstone-02-exact-fold/c-engine/
+device-output/capstone-02-exact-fold/*.uf2
+device-output/**/*.rgb
+
+# The distributable UF2 files under releases/ are intentionally tracked.

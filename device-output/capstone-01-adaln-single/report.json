@@ -1,0 +1,201 @@
+{
+  "model": "m3_long_cfg",
+  "checkpoint": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\upstream\\pico-faces\\checkpoints\\m3_long_cfg\\dit_qat.pt",
+  "checkpoint_step": 15000,
+  "shape": [
+    8,
+    5,
+    8,
+    6,
+    128
+  ],
+  "ordinary_modulation_values": 245760,
+  "adaln_single_values": 36864,
+  "value_reduction_fraction": 0.85,
+  "overall_modulation_fit": {
+    "reference_rms": 0.7977161407470703,
+    "error_rms": 0.17946814000606537,
+    "relative_rmse": 0.22497744603486572,
+    "mean_absolute_error": 0.11545942723751068,
+    "maximum_absolute_error": 1.6684129238128662,
+    "cosine_similarity": 0.9743639679310319
+  },
+  "component_modulation_fit": {
+    "attn_scale": {
+      "reference_rms": 1.0685138702392578,
+      "error_rms": 0.19426028430461884,
+      "relative_rmse": 0.18180417654393272,
+      "mean_absolute_error": 0.12899363040924072,
+      "maximum_absolute_error": 1.6684129238128662,
+      "cosine_similarity": 0.9833347555831286
+    },
+    "attn_shift": {
+      "reference_rms": 0.36464568972587585,
+      "error_rms": 0.09342145174741745,
+      "relative_rmse": 0.2561978775003414,
+      "mean_absolute_error": 0.06390742212533951,
+      "maximum_absolute_error": 0.9055167436599731,
+      "cosine_similarity": 0.96662435650813
+    },
+    "attn_gate": {
+      "reference_rms": 1.1458970308303833,
+      "error_rms": 0.26800671219825745,
+      "relative_rmse": 0.23388376528390536,
+      "mean_absolute_error": 0.18505887687206268,
+      "maximum_absolute_error": 1.4938807487487793,
+      "cosine_similarity": 0.972264561282107
+    },
+    "mlp_scale": {
+      "reference_rms": 0.6093329191207886,
+      "error_rms": 0.13572447001934052,
+      "relative_rmse": 0.22274271709327384,
+      "mean_absolute_error": 0.09327822923660278,
+      "maximum_absolute_error": 1.0054152011871338,
+      "cosine_similarity": 0.9748772647841119
+    },
+    "mlp_shift": {
+      "reference_rms": 0.3906797468662262,
+      "error_rms": 0.11646484583616257,
+      "relative_rmse": 0.2981082248833381,
+      "mean_absolute_error": 0.08369600772857666,
+      "maximum_absolute_error": 0.9156480431556702,
+      "cosine_similarity": 0.9545320796187923
+    },
+    "mlp_gate": {
+      "reference_rms": 0.8404883742332458,
+      "error_rms": 0.20730529725551605,
+      "relative_rmse": 0.24664861955364334,
+      "mean_absolute_error": 0.13782238960266113,
+      "maximum_absolute_error": 1.5392837524414062,
+      "cosine_similarity": 0.9691049779644441
+    }
+  },
+  "trajectories": {
+    "plain": {
+      "seeds": [
+        101,
+        202,
+        303,
+        404
+      ],
+      "step_metrics": [
+        {
+          "time": 1.0,
+          "mean_relative_velocity_error": 0.41042858362197876,
+          "mean_velocity_cosine": 0.9578717350959778
+        },
+        {
+          "time": 0.875,
+          "mean_relative_velocity_error": 0.41211122274398804,
+          "mean_velocity_cosine": 0.9484659433364868
+        },
+        {
+          "time": 0.75,
+          "mean_relative_velocity_error": 0.3812127113342285,
+          "mean_velocity_cosine": 0.9391434192657471
+        },
+        {
+          "time": 0.625,
+          "mean_relative_velocity_error": 0.39352449774742126,
+          "mean_velocity_cosine": 0.922196626663208
+        },
+        {
+          "time": 0.5,
+          "mean_relative_velocity_error": 0.5167480707168579,
+          "mean_velocity_cosine": 0.8560354709625244
+        },
+        {
+          "time": 0.375,
+          "mean_relative_velocity_error": 0.7080138921737671,
+          "mean_velocity_cosine": 0.7100354433059692
+        },
+        {
+          "time": 0.25,
+          "mean_relative_velocity_error": 0.907110333442688,
+          "mean_velocity_cosine": 0.4896548390388489
+        },
+        {
+          "time": 0.125,
+          "mean_relative_velocity_error": 1.0815412998199463,
+          "mean_velocity_cosine": 0.22443094849586487
+        }
+      ],
+      "mean_final_latent_relative_error": 0.4553825855255127,
+      "per_class_final_latent_relative_error": {
+        "female_neutral": 0.45475783944129944,
+        "female_smiling": 0.4448994994163513,
+        "male_neutral": 0.4751295745372772,
+        "male_smiling": 0.4467433989048004
+      },
+      "image_metrics": {
+        "mean_absolute_pixel_error": 18.51926612854004,
+        "root_mean_square_pixel_error": 23.381415970658594,
+        "maximum_absolute_pixel_error": 127.0,
+        "psnr_db": 20.753387441689917
+      }
+    },
+    "cfg4": {
+      "seeds": [
+        101,
+        202,
+        303,
+        404
+      ],
+      "step_metrics": [
+        {
+          "time": 1.0,
+          "mean_relative_velocity_error": 0.47792208194732666,
+          "mean_velocity_cosine": 0.9314866065979004
+        },
+        {
+          "time": 0.875,
+          "mean_relative_velocity_error": 0.49576181173324585,
+          "mean_velocity_cosine": 0.9044838547706604
+        },
+        {
+          "time": 0.75,
+          "mean_relative_velocity_error": 0.5133535265922546,
+          "mean_velocity_cosine": 0.874178409576416
+        },
+        {
+          "time": 0.625,
+          "mean_relative_velocity_error": 0.5364620685577393,
+          "mean_velocity_cosine": 0.8486312031745911
+        },
+        {
+          "time": 0.5,
+          "mean_relative_velocity_error": 0.6290768384933472,
+          "mean_velocity_cosine": 0.7802188396453857
+        },
+        {
+          "time": 0.375,
+          "mean_relative_velocity_error": 0.7737612724304199,
+          "mean_velocity_cosine": 0.6455053687095642
+        },
+        {
+          "time": 0.25,
+          "mean_relative_velocity_error": 0.9362320899963379,
+          "mean_velocity_cosine": 0.4497987627983093
+        },
+        {
+          "time": 0.125,
+          "mean_relative_velocity_error": 1.085063099861145,
+          "mean_velocity_cosine": 0.22166898846626282
+        }
+      ],
+      "mean_final_latent_relative_error": 0.5561456680297852,
+      "per_class_final_latent_relative_error": {
+        "female_neutral": 0.5384194850921631,
+        "female_smiling": 0.5854575037956238,
+        "male_neutral": 0.5343926548957825,
+        "male_smiling": 0.5663129687309265
+      },
+      "image_metrics": {
+        "mean_absolute_pixel_error": 25.682846069335938,
+        "root_mean_square_pixel_error": 34.16603745292063,
+        "maximum_absolute_pixel_error": 166.0,
+        "psnr_db": 17.45891135615831
+      }
+    }
+  }
+}

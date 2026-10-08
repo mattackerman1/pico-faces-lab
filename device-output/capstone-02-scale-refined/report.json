@@ -1,0 +1,64 @@
+{
+  "model": "m3_long_cfg",
+  "multipliers4": [
+    1.5,
+    1.65,
+    1.8,
+    2.0,
+    2.25
+  ],
+  "multipliers5": [
+    1.25,
+    1.3,
+    1.35,
+    1.4,
+    1.45
+  ],
+  "best_velocity_candidate": {
+    "block4_multiplier": 1.8,
+    "block5_multiplier": 1.4,
+    "velocity_mse": 0.0037182179242791725,
+    "velocity_relative_rmse": 0.07425842628584584,
+    "velocity_cosine": 0.9971937838759587,
+    "early_velocity_mse": 0.0037897387587375836,
+    "block4_clip_percent": 0.0,
+    "block5_clip_percent": 0.0016021728515625,
+    "block4_local_relative_rmse": 0.02565441766452133,
+    "block5_local_relative_rmse": 0.020541449590908888
+  },
+  "trajectory_evaluation": {
+    "plain": {
+      "baseline_latent_relative_error": 0.13395333290100098,
+      "tuned_latent_relative_error": 0.09652047604322433,
+      "baseline_image_metrics": {
+        "mean_absolute_pixel_error": 5.778834819793701,
+        "root_mean_square_pixel_error": 8.205884952371834,
+        "maximum_absolute_pixel_error": 101.0,
+        "psnr_db": 29.848295132567007
+      },
+      "tuned_image_metrics": {
+        "mean_absolute_pixel_error": 3.890212297439575,
+        "root_mean_square_pixel_error": 5.742824555435393,
+        "maximum_absolute_pixel_error": 88.0,
+        "psnr_db": 32.94829263485852
+      }
+    },
+    "cfg4": {
+      "baseline_latent_relative_error": 0.22825270891189575,
+      "tuned_latent_relative_error": 0.1893150508403778,
+      "baseline_image_metrics": {
+        "mean_absolute_pixel_error": 9.386079788208008,
+        "root_mean_square_pixel_error": 13.369348776000122,
+        "maximum_absolute_pixel_error": 154.0,
+        "psnr_db": 25.60859854478228
+      },
+      "tuned_image_metrics": {
+        "mean_absolute_pixel_error": 7.321756362915039,
+        "root_mean_square_pixel_error": 10.458079989785597,
+        "maximum_absolute_pixel_error": 119.0,
+        "psnr_db": 27.74176442356131
+      }
+    }
+  },
+  "interpretation_note": "Best candidate selected only by teacher-state velocity MSE; complete trajectories are the decision gate."
+}

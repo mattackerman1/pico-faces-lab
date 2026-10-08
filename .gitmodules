@@ -1,0 +1,3 @@
+[submodule "upstream/pico-faces"]
+	path = upstream/pico-faces
+	url = https://github.com/cpldcpu/pico-faces.git

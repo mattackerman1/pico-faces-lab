@@ -1,0 +1,58 @@
+{
+  "model": "m3_long_cfg",
+  "multipliers": [
+    1.0,
+    1.05,
+    1.1,
+    1.2,
+    1.35,
+    1.5
+  ],
+  "best_velocity_candidate": {
+    "block4_multiplier": 1.5,
+    "block5_multiplier": 1.35,
+    "velocity_mse": 0.003724009435457694,
+    "velocity_relative_rmse": 0.07431623639486566,
+    "velocity_cosine": 0.9972006052951543,
+    "early_velocity_mse": 0.003888597996115721,
+    "block4_clip_percent": 0.11182149251302083,
+    "block5_clip_percent": 0.037053426106770836,
+    "block4_local_relative_rmse": 0.028833302965664456,
+    "block5_local_relative_rmse": 0.020026522116047753
+  },
+  "trajectory_evaluation": {
+    "plain": {
+      "baseline_latent_relative_error": 0.13395333290100098,
+      "tuned_latent_relative_error": 0.09595446288585663,
+      "baseline_image_metrics": {
+        "mean_absolute_pixel_error": 5.778834819793701,
+        "root_mean_square_pixel_error": 8.205884952371834,
+        "maximum_absolute_pixel_error": 101.0,
+        "psnr_db": 29.848295132567007
+      },
+      "tuned_image_metrics": {
+        "mean_absolute_pixel_error": 3.8895881175994873,
+        "root_mean_square_pixel_error": 5.776432814108393,
+        "maximum_absolute_pixel_error": 104.0,
+        "psnr_db": 32.897609080408785
+      }
+    },
+    "cfg4": {
+      "baseline_latent_relative_error": 0.22825270891189575,
+      "tuned_latent_relative_error": 0.19552195072174072,
+      "baseline_image_metrics": {
+        "mean_absolute_pixel_error": 9.386079788208008,
+        "root_mean_square_pixel_error": 13.369348776000122,
+        "maximum_absolute_pixel_error": 154.0,
+        "psnr_db": 25.60859854478228
+      },
+      "tuned_image_metrics": {
+        "mean_absolute_pixel_error": 7.362602710723877,
+        "root_mean_square_pixel_error": 10.609127620459068,
+        "maximum_absolute_pixel_error": 133.0,
+        "psnr_db": 27.617210134605898
+      }
+    }
+  },
+  "interpretation_note": "Best candidate selected only by teacher-state velocity MSE; complete trajectories are the decision gate."
+}

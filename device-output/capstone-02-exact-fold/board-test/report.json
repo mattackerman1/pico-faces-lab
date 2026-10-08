@@ -1,0 +1,16 @@
+{
+  "port": "COM3",
+  "seed": 42,
+  "steps": 4,
+  "condition": 1,
+  "cfg": 4,
+  "width": 128,
+  "height": 128,
+  "channels": 3,
+  "generation_ms": 5344,
+  "device_crc32": "94ee4f2c",
+  "host_crc32": "94ee4f2c",
+  "transport_crc_matches": true,
+  "expected_path": "device-output\\capstone-02-exact-fold\\board-test\\expected.rgb",
+  "expected_byte_exact": true
+}

@@ -1,0 +1,80 @@
+{
+  "checkpoint": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\upstream\\pico-faces\\checkpoints\\m3_long_cfg\\dit_qat.pt",
+  "source_calibration": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\upstream\\pico-faces\\checkpoints\\m3_long_cfg\\calib_cfg.npz",
+  "derived_calibration": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\device-output\\capstone-02-exact-fold\\calib-attn45-rescaled.npz",
+  "changed_entries": {
+    "att_in.4": {
+      "multiplier": 1.8,
+      "before_min": 7.50356650352478,
+      "before_max": 7.50356650352478,
+      "after_min": 13.506419706344605,
+      "after_max": 13.506419706344605
+    },
+    "att_in.5": {
+      "multiplier": 1.4,
+      "before_min": 6.236377716064453,
+      "before_max": 6.236377716064453,
+      "after_min": 8.730928802490233,
+      "after_max": 8.730928802490233
+    }
+  },
+  "absent_optional_per_channel_entries": [
+    "att_in.4__pc",
+    "att_in.5__pc"
+  ],
+  "baseline_blob": {
+    "path": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\upstream\\pico-faces\\artifacts\\m3_long_cfg\\export\\model.bin",
+    "bytes": 2567828,
+    "sha256": "e50fe675a75c2d0435dadfe3067e60c73ef1f0a2e18f3ac10e218571496c4ad8"
+  },
+  "tuned_blob": {
+    "path": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\device-output\\capstone-02-exact-fold\\tuned\\model.bin",
+    "bytes": 2567828,
+    "sha256": "9e99dc2d0f105d37c9b7426b24b30597a23a384cb32a41dc81526028422227b9"
+  },
+  "blob_differing_bytes": 41621,
+  "header_byte_identical": true,
+  "exact_integer_quality": {
+    "plain": {
+      "baseline_vs_float": {
+        "mean_absolute_pixel_error": 3.080413818359375,
+        "root_mean_square_pixel_error": 4.166820879307673,
+        "maximum_absolute_pixel_error": 40.0,
+        "psnr_db": 35.73470697510478
+      },
+      "tuned_vs_float": {
+        "mean_absolute_pixel_error": 2.326939821243286,
+        "root_mean_square_pixel_error": 3.22985464991388,
+        "maximum_absolute_pixel_error": 34.0,
+        "psnr_db": 37.94714403611708
+      },
+      "tuned_vs_baseline": {
+        "mean_absolute_pixel_error": 2.427088499069214,
+        "root_mean_square_pixel_error": 3.2522723250343106,
+        "maximum_absolute_pixel_error": 22.0,
+        "psnr_db": 37.88706553747108
+      }
+    },
+    "cfg4": {
+      "baseline_vs_float": {
+        "mean_absolute_pixel_error": 6.749475955963135,
+        "root_mean_square_pixel_error": 9.159481584962844,
+        "maximum_absolute_pixel_error": 99.0,
+        "psnr_db": 28.893385731744164
+      },
+      "tuned_vs_float": {
+        "mean_absolute_pixel_error": 5.96997594833374,
+        "root_mean_square_pixel_error": 8.396479150309494,
+        "maximum_absolute_pixel_error": 91.0,
+        "psnr_db": 29.648859330629435
+      },
+      "tuned_vs_baseline": {
+        "mean_absolute_pixel_error": 6.852671146392822,
+        "root_mean_square_pixel_error": 9.598257590161344,
+        "maximum_absolute_pixel_error": 78.0,
+        "psnr_db": 28.486955588844168
+      }
+    }
+  },
+  "python_goldens": "C:\\Users\\matta\\OneDrive\\Documents\\ChatGPT\\LLM\\pico-faces-lab\\device-output\\capstone-02-exact-fold\\tuned\\goldens"
+}

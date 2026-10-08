@@ -1,0 +1,13 @@
+*.png binary
+*.npz binary
+*.uf2 binary
+*.zip binary
+*.rgb binary
+*.bin binary
+*.pt binary
+*.npy binary
+*.ps1 text eol=crlf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
